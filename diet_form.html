@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 style="text-align: center;">Diet Form</h1>
+    <form action="#">
+        <div style="padding: 10px;">
+            <!-- Basic Information Table -->
+            <h2>Basic Information:</h2>
+            <table style="border: 1px solid black;padding: 10px;border-spacing: 25px;">
+                <tr>
+                    <div >
+                        <td><label for="first_name">First Name:</label></td>
+                        <td><input type="text" placeholder="First Name" name="first_name" style="padding: 5px;"></td>
+                    </div>
+                </tr>
+                <tr>
+                    <div >
+                        <td><label for="last_name">Last Name:</label></td>
+                        <td><input type="text" placeholder="Last Name" name="last_name" style="padding: 5px;"></td>
+                    </div>
+                </tr>
+                <tr>
+                    <div >
+                        <td><label for="age">Age:</label></td>
+                        <td><input type="number" placeholder="Age" name="age" style="padding: 5px;"></td>
+                    </div>
+                </tr>
+                <tr>
+                    <div>
+                        <td><label for="gender">Gender:</label></td>
+                        <td>
+                            <input type="radio" name="gender">
+                            <label>Male</label>
+                            <input type="radio" name="gender">
+                            <label>Female</label>
+                        </td>
+                    </div>
+                </tr>
+                <tr>
+                    <div>
+                        <td><label for="preferred_menu">Preferred Menu:</label></td>
+                        <td>
+                            <select name="preferred_menu" style="padding: 5px;" id="preferred_menu">
+                                <option value="vegetarian" style="color: green;">Vegetarian</option>
+                                <option value="non_vegetarian" style="color: red;">Non-Vegetarian</option>
+                            </select>
+                        </td>
+                    </div>
+                </tr>
+                <tr>
+                    <div>
+                        <td><label for="weight">Weight:</label></td>
+                        <td><input type="number" placeholder="Weight in kg" name="weight" style="padding: 5px;"></td>
+                    </div>
+                </tr>
+            </table>
+        </div>
+        <div style="padding: 10px;">
+            <!-- Calorie Intake Targets Table -->
+            <h2>Calorie Intake Targets:</h2>
+            <table style="border: 1px solid black;padding: 10px;border-spacing: 25px;">
+                <tr>
+                    <td><label for="daily_calorie_target">Calorie Target:</label></td>
+                    <td><input type="number" placeholder="Daily Calorie Target" name="daily_calorie_target" style="padding: 5px;"></td>
+                </tr>
+                <tr>
+                    <td><label for="protein_target">Protein Target:</label></td>
+                    <td><input type="number" placeholder="Daily Protein Target (g)" name="protein_target" style="padding: 5px;"></td>
+                    <td><label for="carbohydrate_target">Carbohydrate Target:</label></td>
+                    <td><input type="number" placeholder="Daily Carbohydrate Target (g)" name="carbohydrate_target" style="padding: 5px;"></td>
+                    <td><label for="fat_target">Fat Target:</label></td>
+                    <td><input type="number" placeholder="Daily Fat Target (g)" name="fat_target" style="padding: 5px;"></td>
+                </tr>
+            </table>
+        </div>
+        <div style="padding: 10px;">
+            <!-- Breakfast Table -->
+            <h2>Breakfast:</h2>
+            <table style="border: 1px solid black;padding: 10px;border-spacing: 25px;">
+                <tr>
+                    <td style="background-color: chocolate;"><label for="breakfast_time"><h3>Breakfast Time:</h3></label></td>
+                    <td><input type="time" name="breakfast_time"></td>
+                </tr>
+                <tr>
+                    <td style="background-color: green;"><h3>Starters: </h3></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="soup_selector"><label for="soup_selector">Soup</label></td>
+                    <td><input type="number" name="soup_counter" style="padding: 5px;" placeholder="Cups of soup"></td>
+                    <td><input type="checkbox" name="bread_selector"><label for="bread_selector">Bread</label></td>
+                    <td><input type="number" name="bread_counter" style="padding: 5px;" placeholder="No of bread"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="salad_selector"><label for="salad_selector">Salad</label></td>
+                    <td><input type="number" name="salad_counter" style="padding: 5px;" placeholder="Cups of salad"></td>
+                    <td><input type="checkbox" name="vada_selector"><label for="vada_selector">Vada</label></td>
+                    <td><input type="number" name="vada_counter" style="padding: 5px;" placeholder="No of vadas"></td>
+                </tr>
+                <tr>
+                    <td style="background-color: red;"><h3>Main Course: </h3></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="idli_selector"><label for="idli_selector">Idli</label></td>
+                    <td><input type="number" name="idli_counter" style="padding: 5px;" placeholder="No of idlis"></td>
+                    <td><input type="checkbox" name="dosa_selector"><label for="dosa_selector">Dosa</label></td>
+                    <td><input type="number" name="dosa_counter" style="padding: 5px;" placeholder="No of dosas"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="chapathi_selector"><label for="chapathi_selector">Chapathi</label></td>
+                    <td><input type="number" name="chapathi_counter" style="padding: 5px;" placeholder="No of chapathis"></td>
+                    <td><input type="checkbox" name="pasta_selector"><label for="pasta_selector">Pasta</label></td>
+                    <td><input type="number" name="pasta_counter" style="padding: 5px;" placeholder="Cups of pasta"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="pongal_selector"><label for="pongal_selector">Pongal</label></td>
+                    <td><input type="number" name="pongal_counter" style="padding: 5px;" placeholder="Cups of pongal"></td>
+                    <td><input type="checkbox" name="upma_selector"><label for="upma_selector">Upma</label></td>
+                    <td><input type="number" name="upma_counter" style="padding: 5px;" placeholder="Cups of upma"></td>
+                </tr>
+                <tr>
+                    <td style="background-color: aqua;"><h3>Drinks:</h3></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="tea_selector"><label for="tea_selector">Tea</label></td>
+                    <td><input type="number" name="tea_counter" style="padding: 5px;" placeholder="Cups of tea"></td>
+                    <td><input type="checkbox" name="coffee_selector"><label for="coffee_selector">Coffee</label></td>
+                    <td><input type="number" name="coffee_counter" style="padding: 5px;" placeholder="Cups of coffee"></td>
+                </tr>
+            </table>
+        </div>
+        <div style="padding: 10px;">
+            <!-- Lunch Table -->
+            <h2>Lunch:</h2>
+            <table style="border: 1px solid black;padding: 10px;border-spacing: 25px;">
+                <tr>
+                    <td style="background-color: chocolate;"><label for="lunch_time"><h3>Lunch Time:</h3></label></td>
+                    <td><input type="time" name="lunch_time"></td>
+                </tr>
+                <tr>
+                    <td style="background-color: green;"><h3>Starters: </h3></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="egg_selector"><label for="egg_selector">Egg</label></td>
+                    <td><input type="number" name="egg_counter" style="padding: 5px;" placeholder="No of eggs"></td>
+                    <td><input type="checkbox" name="chapathi_selector"><label for="chapathi_selector">Chapathi</label></td>
+                    <td><input type="number" name="chapathi_counter" style="padding: 5px;" placeholder="No of chapathis"></td>
+                </tr>
+                <tr>
+                    <td style="background-color: red;"><h3>Main Course:</h3></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="rice_selector"><label for="rice_selector">Rice</label></td>
+                    <td><input type="number" name="rice_counter" style="padding: 5px;" placeholder="Cups of rice"></td>
+                    <td><input type="checkbox" name="dal_selector"><label for="dal_selector">Dal</label></td>
+                    <td><input type="number" name="dal_counter" style="padding: 5px;" placeholder="Cups of dal"></td>
+                    <td><input type="checkbox" name="sambar_selector"><label for="sambar_selector">Sambar</label></td>
+                    <td><input type="number" name="curry_counter" style="padding: 5px;" placeholder="Cups of curry"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="rasam_selector"><label for="rasam_selector">Rasam</label></td>
+                    <td><input type="number" name="rasam_counter" style="padding: 5px;" placeholder="Cups of rasam"></td>
+                    <td><input type="checkbox" name="fish_selector"><label for="fish_selector" style="color: red;">Fish</label></td>
+                    <td><input type="number" name="fish_counter" style="padding: 5px;" placeholder="No of fish pieces"></td>
+                    <td><input type="checkbox" name="chicken_selector"><label for="chicken_selector" style="color: red;">Chicken</label></td>
+                    <td><input type="number" name="chicken_counter" style="padding: 5px;" placeholder="Plates of chicken"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="curd_selector"><label for="curd_selector">Curd</label></td>
+                    <td><input type="number" name="curd_counter" style="padding: 5px;" placeholder="Cups of curd"></td>
+                    <td><input type="checkbox" name="more_selector"><label for="more_selector">More</label></td>
+                    <td><input type="number" name="more_counter" style="padding: 5px;" placeholder="Cups of more"></td>
+                    <td><input type="checkbox" name="biryani_selector"><label for="biryani_selector">Biryani</label></td>
+                    <td><input type="number" name="biryani_counter" style="padding: 5px;" placeholder="Cups of biryani"></td>
+                </tr>
+                <tr>
+                    <td style="background-color: yellowgreen;"><h3>Side Course:</h3></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="chips_selector"><label for="chips_selector">Chips</label></td>
+                    <td><input type="number" name="chips_counter" style="padding: 5px;" placeholder="Plates of chips"></td>
+                    <td><input type="checkbox" name="vegetable_selector"><label for="vegetable_selector">Vegetable</label></td>
+                    <td><input type="number" name="vegetable_counter" style="padding: 5px;" placeholder="Plates of Vegetable"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="appalam_selector"><label for="appalam_selector">Appalam</label></td>
+                    <td><input type="number" name="appalam_counter" style="padding: 5px;" placeholder="No of appalams"></td>
+                    <td><input type="checkbox" name="pickle_selector"><label for="pickle_selector">Pickle</label></td>
+                    <td><input type="number" name="pickle_counter" style="padding: 5px;" placeholder="Spoons of pickle"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="sweet_selector"><label for="sweet_selector">Sweet</label></td>
+                    <td><input type="number" name="sweet_counter" style="padding: 5px;" placeholder="No of / Cups of sweets"></td>
+                </tr>
+            </table>
+        </div>
+        <div style="padding: 10px;">
+            <!-- Evening snacks Table -->
+            <h2>Evening Snacks:</h2>
+            <table style="border: 1px solid black;padding: 10px;border-spacing: 25px;">
+                <tr>
+                    <td style="background-color: chocolate;"><label for="evening_snacks_time"><h3>Evening Snacks Time:</h3></label></td>
+                    <td><input type="time" name="evening_snacks_time"></td>
+                </tr>
+                <tr>
+                    <td style="background-color: red;"><h3>Main Course:</h3></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="veg_puff_selector"><label for="veg_puff_selector">Veg Puffs</label></td>
+                    <td><input type="number" name="veg_puff_counter" style="padding: 5px;" placeholder="No of veg puffs"></td>
+                    <td><input type="checkbox" name="chicken_puff_selector"><label for="chicken_puff_selector" style="color: red;">Chicken Puffs</label></td>
+                    <td><input type="number" name="chicken_puff_counter" style="padding: 5px;" placeholder="No of chicken puffs"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="egg_puff_selector"><label for="egg_puff_selector">Egg Puffs</label></td>
+                    <td><input type="number" name="egg_puff_counter" style="padding: 5px;" placeholder="No of egg puffs"></td>
+                    <td><input type="checkbox" name="samosa_selector"><label for="samosa_selector">Samosa</label></td>
+                    <td><input type="number" name="samosa_counter" style="padding: 5px;" placeholder="No of samosas"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="vada_selector"><label for="vada_selector">Vada</label></td>
+                    <td><input type="number" name="vada_counter" style="padding: 5px;" placeholder="No of vadas"></td>
+                    <td><input type="checkbox" name="bonda_selector"><label for="bonda_selector">Bonda</label></td>
+                    <td><input type="number" name="bonda_counter" style="padding: 5px;" placeholder="No of bondas"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="mixture_selector"><label for="mixture_selector">Mixture</label></td>
+                    <td><input type="number" name="mixture_counter" style="padding: 5px;" placeholder="Plates of mixture"></td>
+                    <td><input type="checkbox" name="sundal_selector"><label for="sundal_selector">Sundal</label></td>
+                    <td><input type="number" name="sundal_counter" style="padding: 5px;" placeholder="Plates of sundal"></td>
+                </tr>
+                <tr>
+                    <td style="background-color: aqua;"><h3>Drinks:</h3></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="tea_selector"><label for="tea_selector">Tea</label></td>
+                    <td><input type="number" name="tea_counter" style="padding: 5px;" placeholder="Cups of tea"></td>
+                    <td><input type="checkbox" name="coffee_selector"><label for="coffee_selector">Coffee</label></td>
+                    <td><input type="number" name="coffee_counter" style="padding: 5px;" placeholder="Cups of coffee"></td>
+                </tr>
+            </table>
+        </div>
+        <div style="padding: 10px;">
+            <!-- Dinner Table -->
+            <h2>Dinner:</h2>
+            <table style="border: 1px solid black;padding: 10px;border-spacing: 25px;">
+                <tr>
+                    <td style="background-color: chocolate;"><label for="dinner_time"><h3>Dinner Time:</h3></label></td>
+                    <td><input type="time" name="dinner_time"></td>
+                </tr>
+                <tr>
+                    <td style="background-color: green;"><h3>Starters:</h3></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="poori_selector"><label for="poori_selector">Poori</label></td>
+                    <td><input type="number" name="poori_counter" style="padding: 5px;" placeholder="No of pooris"></td>
+                    <td><input type="checkbox" name="parotta_selector"><label for="parotta_selector">Parotta</label></td>
+                    <td><input type="number" name="parotta_counter" style="padding: 5px;" placeholder="No of parottas"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="chapathi_selector"><label for="chapathi_selector">Chapathi</label></td>
+                    <td><input type="number" name="chapathi_counter" style="padding: 5px;" placeholder="No of chapathis"></td>
+                    <td><input type="checkbox" name="naan_selector"><label for="naan_selector">Naan</label></td>
+                    <td><input type="number" name="naan_counter" style="padding: 5px;" placeholder="No of naans"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="pulao_selector"><label for="pulao_selector">Pulao</label></td>
+                    <td><input type="number" name="pulao_counter" style="padding: 5px;" placeholder="Cups of pulao"></td>
+                    <td><input type="checkbox" name="dosa_selector"><label for="dosa_selector">Dosa</label></td>
+                    <td><input type="number" name="dosa_counter" style="padding: 5px;" placeholder="No of dosas"></td>
+                </tr>
+                <tr>
+                    <td style="background-color: red;"><h3>Main Course:</h3></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="rice_selector"><label for="rice_selector">Rice</label></td>
+                    <td><input type="number" name="rice_counter" style="padding: 5px;" placeholder="Cups of rice"></td>
+                    <td><input type="checkbox" name="dal_selector"><label for="dal_selector">Dal</label></td>
+                    <td><input type="number" name="dal_counter" style="padding: 5px;" placeholder="Cups of dal"></td>
+                    <td><input type="checkbox" name="sambar_selector"><label for="sambar_selector">Sambar</label></td>
+                    <td><input type="number" name="curry_counter" style="padding: 5px;" placeholder="Cups of curry"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="rasam_selector"><label for="rasam_selector">Rasam</label></td>
+                    <td><input type="number" name="rasam_counter" style="padding: 5px;" placeholder="Cups of rasam"></td>
+                    <td><input type="checkbox" name="fish_selector"><label for="fish_selector" style="color: red;">Fish</label></td>
+                    <td><input type="number" name="fish_counter" style="padding: 5px;" placeholder="No of fish pieces"></td>
+                    <td><input type="checkbox" name="chicken_selector"><label for="chicken_selector" style="color: red;">Chicken</label></td>
+                    <td><input type="number" name="chicken_counter" style="padding: 5px;" placeholder="Plates of chicken"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="curd_selector"><label for="curd_selector">Curd</label></td>
+                    <td><input type="number" name="curd_counter" style="padding: 5px;" placeholder="Cups of curd"></td>
+                    <td><input type="checkbox" name="more_selector"><label for="more_selector">More</label></td>
+                    <td><input type="number" name="more_counter" style="padding: 5px;" placeholder="Cups of more"></td>
+                    <td><input type="checkbox" name="biryani_selector"><label for="biryani_selector">Biryani</label></td>
+                    <td><input type="number" name="biryani_counter" style="padding: 5px;" placeholder="Cups of biryani"></td>
+                </tr>
+                <tr>
+                    <td style="background-color: yellowgreen;"><h3>Side Course:</h3></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="chips_selector"><label for="chips_selector">Chips</label></td>
+                    <td><input type="number" name="chips_counter" style="padding: 5px;" placeholder="Plates of chips"></td>
+                    <td><input type="checkbox" name="vegetable_selector"><label for="vegetable_selector">Vegetable</label></td>
+                    <td><input type="number" name="vegetable_counter" style="padding: 5px;" placeholder="Plates of Vegetable"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="appalam_selector"><label for="appalam_selector">Appalam</label></td>
+                    <td><input type="number" name="appalam_counter" style="padding: 5px;" placeholder="No of appalams"></td>
+                    <td><input type="checkbox" name="pickle_selector"><label for="pickle_selector">Pickle</label></td>
+                    <td><input type="number" name="pickle_counter" style="padding: 5px;" placeholder="Spoons of pickle"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="sweet_selector"><label for="sweet_selector">Sweet</label></td>
+                    <td><input type="number" name="sweet_counter" style="padding: 5px;" placeholder="No of / Cups of sweets"></td>
+                </tr>
+            </table>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    
+    <div style="padding: 10px;">
+        <!-- About the Developer -->
+        <h2 style="text-align: center;">About the Developer</h2>
+        <p>I am jaiganesh a software developer with 6 months of experience in full stack development</p>
+        <img src="jaiganesh.jpg">
+    </div>
+    <div style="padding: 10px;">
+        <!-- Good habits images -->
+        <h2 style="text-align: center;">Good habits</h2>
+        <img src="good_habits1.webp" alt="">
+        <img src="good_habits2.webp" alt="">
+        <img src="good_habits3.webp" alt="">
+    </div>
+    
+    <script>
+        const select = document.getElementById('preferred_menu');
+        function updateColor() {
+            if (select.value === 'vegetarian') {
+                select.style.color = 'green';
+            } else if (select.value === 'non_vegetarian') {
+                select.style.color = 'red';
+            } else {
+                select.style.color = '';
+            }
+        }
+        select.addEventListener('change', updateColor);
+        updateColor();
+        let first_name, last_name, age, preferred_menu, gender, weight, daily_calorie_target, protein_target, carbohydrate_target, fat_target;
+        const meal_frequencies = ["breakfast", "lunch", "evening_snacks", "dinner"];
+        let age_string = age.toString();
+    </script>
+</body>
+
+</html>
